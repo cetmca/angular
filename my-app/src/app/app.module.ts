@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent,App2Component } from './app.component';
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NewCmpComponent } from './new-cmp/new-cmp.component';
 
@@ -12,6 +13,7 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 
   ],
   imports: [
+   HttpClientModule,
     BrowserModule
   ],
   providers: [],
