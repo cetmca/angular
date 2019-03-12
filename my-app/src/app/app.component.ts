@@ -11,8 +11,9 @@ import { map } from 'rxjs/operators';
 export class AppComponent implements OnInit  {
   title = 'My First Angular App -----';
   myVar = ' variable';
-restItems: any;
-  restItemsUrl = 'https://public-api.wordpress.com/rest/v1.1/sites/vocon-it.com/posts';
+  restItems: any;
+ //restItemsUrl = 'https://public-api.wordpress.com/rest/v1.1/sites/vocon-it.com/posts';
+  restItemsUrl = 'http://demo7522704.mockable.io/';
 
   constructor(private http: HttpClient) {}
 
@@ -26,7 +27,7 @@ restItems: any;
       .subscribe(
         restItems => {
           this.restItems = restItems;
-          console.log(this.restItems);
+          console.log(restItems);
         }
       )
   }

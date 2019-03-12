@@ -5,7 +5,20 @@
   </h1>
 </div>
 
-<app-new-cmp></app-new-cmp>
 
 
 
+<h1>Blog Posts</h1>
+<div *ngIf="undefined === restItems">Loading...</div>
+
+<div *ngIf="undefined !== restItems">
+<p *ngIf="restItems['items'].length > 0">There are many items!</p>  
+  <ul>
+    <li *ngFor="let post of restItems['items']" [innerHTML]="post.name">
+     --->>>> post.short_URL  --- >>>>>>>>
+    </li>
+    <li *ngFor="let hero of restItems['items']">
+          {{ hero.name }} --  {{ hero.price }}
+    </li>
+  </ul>
+</div>
