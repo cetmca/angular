@@ -17,8 +17,8 @@
     <li *ngFor="let post of restItems['items']" [innerHTML]="post.name">
      --->>>> post.short_URL  --- >>>>>>>>
     </li>
-    <li *ngFor="let hero of restItems['items']">
-          {{ hero.name }} --  {{ hero.price }}
+    <li *ngFor="let item of restItems['items']">
+          {{ item.name }} --  {{ item.price }}
     </li>
   </ul>
 </div>
