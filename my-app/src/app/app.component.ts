@@ -3,6 +3,10 @@ import { ChildComponent } from "./child.component/child.component.component";
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
+//
+//https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
+//
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

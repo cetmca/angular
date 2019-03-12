@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ChildComponent implements OnInit {
-message = 'Hola Mundo!';
+message = 'Hola Mundo! Message from Child ';
 
   constructor() { }
 
