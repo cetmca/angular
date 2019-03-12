@@ -2,11 +2,9 @@ import { Component, OnInit,ViewChild, AfterViewInit } from '@angular/core';
 import { ChildComponent } from "./child.component/child.component.component";
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-
 //
 //https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
 //
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,13 +20,9 @@ export class AppComponent implements OnInit ,AfterViewInit   {
   myVar = ' variable';
   restItems: any;
   restItemsUrl = 'http://demo7522704.mockable.io/';
-
   @ViewChild(ChildComponent) child;
-
   constructor(private http: HttpClient) {}
-
   message:string;
-
   ngAfterViewInit() {
     this.message = this.child.message
   }
